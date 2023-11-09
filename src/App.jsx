@@ -1,13 +1,27 @@
-// import { useState } from 'react'
-import './App.css'
+// routing
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+// components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+// pages
+import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 function App() {
-
-  return (
-    <>
-      <h1>portfolio</h1>
-    </>
-  )
+  return <>
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
+  </>
 }
 
 export default App
