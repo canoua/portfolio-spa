@@ -1,7 +1,7 @@
 function Home() {
-  return <>
-    <span>Home</span>
-  </>
+  return (
+    <span>Главная</span>
+  )
 }
 
 export default Home;
