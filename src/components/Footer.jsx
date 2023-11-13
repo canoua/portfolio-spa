@@ -1,22 +1,40 @@
+import styled from "styled-components";
+
+const FooterTag = styled.footer`
+  background-color: #F8D568;
+`;
+
+const FooterInner = styled.div`
+  display: flex;
+`;
+
+const FooterList = styled.ul`
+  display: flex;
+`;
+
+const ListItem = styled.li`
+  list-style: none;
+`;
+
 function Footer() {
   return (
-    <footer className="footer">
+    <FooterTag>
       <div className="container">
-        <div className="footer-inner">
-          <ul className="list footer__list">
-            <li className="list__item">
-              <a href="#">tg</a>
-            </li>
-            <li className="list__item">
+        <FooterInner>
+          <FooterList>
+            <ListItem>
+              <a href="https://dzen.ru/?clid=2320026&from=dist_bookmark&win=435&yredirect=true">tg</a>
+            </ListItem>
+            <ListItem>
               <a href="#">github</a>
-            </li>
-            <li className="list__item">
+            </ListItem>
+            <ListItem>
               <a href="#">codewars</a>
-            </li>
-          </ul>
-        </div>
+            </ListItem>
+          </FooterList>
+        </FooterInner>
       </div>
-    </footer>
+    </FooterTag>
   )
 }
 
