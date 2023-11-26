@@ -1,9 +1,11 @@
 // routing
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import GlobalStyles from './styles/global';
+
 // components
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 // pages
 import Home from './pages/Home';
@@ -13,6 +15,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return <>
+    <GlobalStyles />
     <Router>
       <Header />
       <main>
@@ -23,7 +26,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   </>
 }

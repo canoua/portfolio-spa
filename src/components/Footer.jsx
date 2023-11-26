@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 const FooterTag = styled.footer`
   background-color: #F8D568;
+  padding: 30px 0;
 `;
 
 const FooterInner = styled.div`
   display: flex;
+  justify-content: center;
 `;
 
 const FooterList = styled.ul`
@@ -14,7 +16,13 @@ const FooterList = styled.ul`
 
 const ListItem = styled.li`
   list-style: none;
+  margin-right: 10px;
 `;
+
+const FooterLink = styled.a`
+  color: #000;
+  font-weight: 700;
+`
 
 function Footer() {
   return (
@@ -23,13 +31,13 @@ function Footer() {
         <FooterInner>
           <FooterList>
             <ListItem>
-              <a href="https://dzen.ru/?clid=2320026&from=dist_bookmark&win=435&yredirect=true">tg</a>
+              <FooterLink href="https://t.me/andrew_karyaka" target="_blank">tg</FooterLink>
             </ListItem>
             <ListItem>
-              <a href="#">github</a>
+              <FooterLink href="https://github.com/canoua" target="_blank">github</FooterLink>
             </ListItem>
             <ListItem>
-              <a href="#">codewars</a>
+              <FooterLink href="https://www.codewars.com/users/canoua" target="_blank">codewars</FooterLink>
             </ListItem>
           </FooterList>
         </FooterInner>

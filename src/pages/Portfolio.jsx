@@ -1,7 +1,9 @@
 function Portfolio() {
-  return (
-    <span>Портфолио</span> 
-  )
+  return <>
+    <div className="container">
+      <span>Портфолио</span> 
+    </div>
+  </>
 }
 
 export default Portfolio;
