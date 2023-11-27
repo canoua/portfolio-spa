@@ -1,19 +1,19 @@
-import styled from "styled-components"
-
-const ContactInner = styled.div`
-  height: 100vh;
-`
+import { ContactInner, ContactBox, Form, Input, Button, ContactTitle } from "../constants/contacts";
 
 function Contact() {
   return <> 
     <ContactInner>
-      <span>Контакты</span>
-      <form action="#">
-        <input type="text" placeholder="ваше имя" />
-        <input type="text" placeholder="ваше сообщение" />
-        <input type="text" />
-        <button type="submit">Отправить</button>
-      </form>
+      <ContactBox>
+        <Form className="form" action="#">
+          <Input type="text" placeholder="Ваше имя" />
+          <Input type="text" placeholder="Ваше сообщение" />
+          <Input type="text" placeholder="Как с вами связаться?"/>
+          <Button type="submit">Отправить</Button>
+        </Form>
+      </ContactBox>
+      <ContactBox>
+        <ContactTitle className="title-page">Контакты</ContactTitle>
+      </ContactBox>
     </ContactInner>
   </>
 }

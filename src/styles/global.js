@@ -4,6 +4,7 @@ export default createGlobalStyle`
   * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
 
   body {
@@ -43,7 +44,19 @@ export default createGlobalStyle`
     font-weight: 400;
   }
 
+  .title-page{
+    font-size: 30px;
+    font-weight: 700;
+  }
+
   .yellow-text {
     color: #F8D568;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `

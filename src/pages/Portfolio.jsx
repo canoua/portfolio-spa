@@ -1,13 +1,11 @@
-import styled from "styled-components";
-
-const PortfolioInner = styled.div`
-  height: 100vh;
-`
+import { PortfolioInner, PortfolioBox } from "../constants/portfolio";
 
 function Portfolio() {
   return <>
     <PortfolioInner>
-      <span>Портфолио</span> 
+      <PortfolioBox>
+        <h2 className="title-page">Портфолио</h2> 
+      </PortfolioBox>
     </PortfolioInner>
   </>
 }
