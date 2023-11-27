@@ -8,20 +8,18 @@ export default createGlobalStyle`
 
   body {
     font-family: 'Nunito', sans-serif;
-    background: #000;
-    color: #fff;
+    position: relative;
   }
 
   a {
     text-decoration: none;
   }
 
-  .link{
-    // color: #000;
-    color: #fff;
+  .link {
+    color: #000;
   }
 
-  .header-link:hover{
+  .header-link:hover {
     color: #F8D568;
   }
 

@@ -1,9 +1,12 @@
+import styled from "styled-components"
 
+const ContactInner = styled.div`
+  height: 100vh;
+`
 
 function Contact() {
-
   return <> 
-    <div className="container">
+    <ContactInner>
       <span>Контакты</span>
       <form action="#">
         <input type="text" placeholder="ваше имя" />
@@ -11,7 +14,7 @@ function Contact() {
         <input type="text" />
         <button type="submit">Отправить</button>
       </form>
-    </div>
+    </ContactInner>
   </>
 }
 

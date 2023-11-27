@@ -13,7 +13,4 @@ Currently, two official plugins are available:
 - Link: адекватно застилить
 - анимация появлений страниц
 - prop-types
-- во весь экран
 - HeaderList: разобраться с выводом через цикл
-
-убрать header, роутинг внизу, абсолютное позиционирование

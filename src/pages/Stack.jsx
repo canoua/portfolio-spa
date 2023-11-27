@@ -1,8 +1,14 @@
+import styled from "styled-components"
+
+const StackInner = styled.div`
+  height: 100vh;
+`
+
 function Stack() {
   return <>
-    <div className="container">
-      <span>Стек</span>
-    </div>
+    <StackInner>
+       <span>Стек</span>
+    </StackInner>
   </>
 }
 

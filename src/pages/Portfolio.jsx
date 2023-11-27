@@ -1,8 +1,14 @@
+import styled from "styled-components";
+
+const PortfolioInner = styled.div`
+  height: 100vh;
+`
+
 function Portfolio() {
   return <>
-    <div className="container">
+    <PortfolioInner>
       <span>Портфолио</span> 
-    </div>
+    </PortfolioInner>
   </>
 }
 
