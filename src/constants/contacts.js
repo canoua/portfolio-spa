@@ -22,7 +22,8 @@ export const ContactBox = styled.div`
 `
 
 export const ContactTitle = styled.h2`
-  
+  font-size: 50px;
+  line-height: 120%;
 `
  
 export const Form = styled.form`

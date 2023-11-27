@@ -1,35 +1,31 @@
-import { StackInner, StackBox } from "../constants/stack"
+import { StackInner, StackBox, StackTitle, StackBoxInner } from "../constants/stack"
 
 function Stack() {
   return <>
     <StackInner>
       <StackBox>
-        <h2>Основной стек</h2>
-          <div>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Препроцессоры(Pug, Sass)</li>
-              <li>JavaScript</li>
-            </ul>
-            <ul>
-              <li>Figma</li>
-              <li>Git</li>
-              <li>Gulp</li>
-            </ul>
-          </div>
-          <h2 >Также работал с:</h2>
-          <div>
-            <ul>
-              <li>React</li>
-              <li>Wordpress</li>
-              <li>PHP</li>
-            </ul>
-            <ul>
-              <li>Photoshop</li>
-              <li>Webpack/Parcel</li>
-            </ul>
-          </div>
+        <StackBoxInner>
+          <StackTitle>Верстка</StackTitle>
+          <ul>
+            <li>HTML (Pug)</li>
+            <li>CSS3 (Sass)</li>
+            <li>JavaScript</li>
+            <li>Vite/Gulp</li>
+            <li>Figma</li>
+            <li>Git</li>
+          </ul>
+        </StackBoxInner>
+        <StackBoxInner>
+          <StackTitle>Базовое знание</StackTitle>
+          <ul>
+            <li>React</li>
+            <li>Wordpress</li>
+            <li>PHP</li>
+            <li>Photoshop</li>
+            <li>Webpack/Parcel</li>
+          </ul>
+        </StackBoxInner>
+        
       </StackBox>
       <StackBox>
         <h2 className="title-page">Стек</h2>

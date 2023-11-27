@@ -33,6 +33,6 @@ export const Logo = styled.div`
 export const Name = styled.div`
   font-weight: 700;
   font-style: normal;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 120%;
 `

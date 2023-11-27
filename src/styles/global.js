@@ -16,6 +16,10 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
+  li {
+    list-style: none;
+  }
+
   .link {
     color: #000;
   }
@@ -45,7 +49,8 @@ export default createGlobalStyle`
   }
 
   .title-page{
-    font-size: 30px;
+    font-size: 50px;
+    line-height: 120%;
     font-weight: 700;
   }
 
