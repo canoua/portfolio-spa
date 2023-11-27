@@ -12,13 +12,13 @@ const HomeInner = styled.div`
 `
 
 const HomePhoto = styled.div`
-  height: 100%;
   // чтоб убрать белую полосу внизу...
   overflow: hidden;
+  width: 50%;
+  height: auto;
 `
 
 const Image = styled.img`
-  height: 100%;
   width: 100%;
 `
 
@@ -27,13 +27,15 @@ const Logo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 50%;
+  // height: 100%;
+  // width: 100%;
 `;
 
 const Name = styled.div`
   font-weight: 700;
   font-style: normal;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 120%;
 `
 
@@ -44,9 +46,9 @@ function Home() {
         <Image src={myPhoto.url} alt={myPhoto.name} />
       </HomePhoto>
       <Logo>
-        <div className="link">
+        <div className="link name-link">
           <Name>
-            <span className="yellow-text">Андрей</span>
+            <span className="yellow-text first-name">Андрей</span>
             <span>Каряка</span>
           </Name>
           <h2 className="title-prof">Web-разработчик</h2>

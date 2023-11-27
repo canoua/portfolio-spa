@@ -6,6 +6,8 @@ const HeaderWrapper = styled.header`
   bottom: 0;
   right: 0;
   width: 50%;
+  background: #F8D568;
+  padding: 15px 0;
 `
 
 const HeaderInner = styled.div`

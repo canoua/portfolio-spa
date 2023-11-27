@@ -19,8 +19,18 @@ export default createGlobalStyle`
     color: #000;
   }
 
-  .header-link:hover {
-    color: #F8D568;
+  .header-link {
+    font-weight: 700;
+  }
+
+  .name-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-name {
+    margin-right: 10px;
   }
 
   .container {
