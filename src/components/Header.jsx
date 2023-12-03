@@ -1,29 +1,5 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-
-const HeaderWrapper = styled.header`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  background: #F8D568;
-  padding: 15px 0;
-`
-
-const HeaderInner = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
-const HeaderList = styled.ul`
-  display: flex;
-  align-items: center;
-`;
-
-const ListItem = styled.li`
-  list-style: none;
-  margin-right: 10px;
-`
+import { HeaderWrapper, HeaderInner, HeaderList, ListItem } from "./constHeader";
 
 function Header() {
   return (
@@ -32,7 +8,7 @@ function Header() {
         <HeaderList>
           <ListItem>
             <Link to="/">
-              <span className="link header-link">Главная</span>
+              <span className="link link_active header-link">Главная</span>
             </Link>
           </ListItem>
           <ListItem>

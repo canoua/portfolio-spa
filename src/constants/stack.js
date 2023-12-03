@@ -7,39 +7,45 @@ export const StackInner = styled.div`
 `
 
 export const StackBox = styled.div`
+  padding: 30px;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  // text-align: left;
   &:first-child {
-    // align-items: end;
     background-color: #f5f5f5;
-    // flex-direction: column;
   }
 `
+
 export const StackBoxInner = styled.div`
-  // display: flex;
+  width: 50%;
   &:first-child {
     margin-right: 20px;
   }
 `
 
-export const StackTitle = styled.h2`
-  position: relative;
-  text-align: left;
-  z-index: 1;
-  margin-bottom: 20px;
-  font-size: 30px;
-  &:after {
-    content: "";
-    position: absolute;
-    top: 33%;
-    left: -5px;
-    width: 110%;
-    height: 20px;
-    background-color: #F8D568;
-    z-index: -1;
-    transition: all 0.3s;
+export const StackList = styled.ul`
+  display: flex;
+  flex-direction: column;
+`
+
+export const StackListItem = styled.li`
+  display: inline-block;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: #292929;  
+  color: #F8D568;
+  padding: 10px 15px;
+  border-radius: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:hover {
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 3px 15px #292929;
   }
 `

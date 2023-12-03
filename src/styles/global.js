@@ -20,8 +20,17 @@ export default createGlobalStyle`
     list-style: none;
   }
 
+  .list-item_white {
+    color: #fff;
+  }
+
   .link {
     color: #000;
+    // display: block;
+  }
+
+  .link_active{
+    border-bottom: 2px solid #000;
   }
 
   .header-link {
@@ -48,7 +57,7 @@ export default createGlobalStyle`
     font-weight: 400;
   }
 
-  .title-page{
+  .title-page {
     font-size: 50px;
     line-height: 120%;
     font-weight: 700;
